@@ -4,7 +4,7 @@ General Info:
   Listdown all JuniorEngineers in new Excel file.
 
 Technologies:
-  Java 1.8.0_281
-  Maven 3.6.1
-  Selenium 3.141.59
-  TestNG 7.0  
+  Java 1.8.0_281,
+  Maven 3.6.1,
+  Selenium 3.141.59,
+  TestNG 7.0.  
