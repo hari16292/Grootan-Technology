@@ -84,7 +84,6 @@ public class testCases extends BaseClass {
 				List<WebElement> je = driver.findElements(t.getJE());
 				for(WebElement eachJE : je) {
 					writeXL(wb, sh1, l, String.valueOf(l+1), eachJE.getText(), sh1.getSheetName());
-					System.out.println(eachJE.getText());
 					l++;
 				}
 			}

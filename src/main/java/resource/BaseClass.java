@@ -90,8 +90,8 @@ public class BaseClass {
 			}		
 			else {
 				cell2 = row.createCell(1);
-				cell2.setCellValue("Fail");
-				cell2.setCellStyle(boldFont(wb, "Fail"));
+				cell2.setCellValue("Pass");
+				cell2.setCellStyle(boldFont(wb, "Pass"));
 			}	
 		}
 		else if (sheetName.contains("JuniorEngineers")){ 
