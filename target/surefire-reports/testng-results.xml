@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="55051" started-at="2021-02-09T15:47:13 IST" finished-at="2021-02-09T15:48:08 IST">
+  <suite name="Suite" duration-ms="57321" started-at="2021-02-09T15:56:54 IST" finished-at="2021-02-09T15:57:51 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="55051" started-at="2021-02-09T15:47:13 IST" finished-at="2021-02-09T15:48:08 IST">
+    <test name="Test" duration-ms="57321" started-at="2021-02-09T15:56:54 IST" finished-at="2021-02-09T15:57:51 IST">
       <class name="grootanTech.testCases">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:grootanTech.testCases@4fe3c938]" name="openBrowser" is-config="true" duration-ms="16616" started-at="2021-02-09T15:47:13 IST" finished-at="2021-02-09T15:47:30 IST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:grootanTech.testCases@4fe3c938]" name="openBrowser" is-config="true" duration-ms="16411" started-at="2021-02-09T15:56:54 IST" finished-at="2021-02-09T15:57:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="tc1()[pri:0, instance:grootanTech.testCases@4fe3c938]" name="tc1" duration-ms="31234" started-at="2021-02-09T15:47:30 IST" finished-at="2021-02-09T15:48:01 IST">
+        <test-method status="PASS" signature="tc1()[pri:0, instance:grootanTech.testCases@4fe3c938]" name="tc1" duration-ms="32574" started-at="2021-02-09T15:57:10 IST" finished-at="2021-02-09T15:57:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc1 -->
-        <test-method status="PASS" signature="tc2()[pri:0, instance:grootanTech.testCases@4fe3c938]" name="tc2" duration-ms="4070" started-at="2021-02-09T15:48:01 IST" finished-at="2021-02-09T15:48:05 IST">
+        <test-method status="PASS" signature="tc2()[pri:0, instance:grootanTech.testCases@4fe3c938]" name="tc2" duration-ms="5240" started-at="2021-02-09T15:57:43 IST" finished-at="2021-02-09T15:57:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc2 -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:grootanTech.testCases@4fe3c938]" name="closeBrowser" is-config="true" duration-ms="2992" started-at="2021-02-09T15:48:05 IST" finished-at="2021-02-09T15:48:08 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:grootanTech.testCases@4fe3c938]" name="closeBrowser" is-config="true" duration-ms="2998" started-at="2021-02-09T15:57:48 IST" finished-at="2021-02-09T15:57:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

@@ -28,7 +28,7 @@ public class BaseClass {
 	
 
 	public WebDriver initializeBrowser() throws Exception {
-		//Initiate properties 
+		//Initialize Firefox browser and return initialized driver
 		WebDriverManager.firefoxdriver().setup();
 		System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");	
 		driver = new FirefoxDriver();
@@ -39,6 +39,7 @@ public class BaseClass {
 	
 	
 	public void takeSnapShot(String ssName, WebDriver driver, int i) throws Exception {
+		//Taking screenshot of the window screen and saved in desired folder
 		Thread.sleep(1000);
 		TakesScreenshot scrShot =((TakesScreenshot)driver);
 		File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
@@ -52,6 +53,7 @@ public class BaseClass {
 	}
 	
 	public boolean compareImg(String imgName1, String imgName2) throws Exception {
+		//Compare screenshots and return result
 		BufferedImage f1 = ImageIO.read(new File(System.getProperty("user.dir") + "\\Folder1\\" + imgName1 + ".png"));
 		BufferedImage f2 = ImageIO.read(new File(System.getProperty("user.dir") + "\\Folder2\\" + imgName2 + ".png"));
 		ImageDiffer imgDiff = new ImageDiffer();
@@ -60,6 +62,7 @@ public class BaseClass {
 	}
 	
 	public void takeWebElementSnapShot(WebDriver driver, WebElement elemnt, String imgName) throws Exception {
+		//Taking screenshot of given specific element and saved in desired folder
 		Thread.sleep(1000);
 		File img = ((TakesScreenshot)elemnt).getScreenshotAs(OutputType.FILE);
 		if(imgName.contains("CTO"))
@@ -69,6 +72,7 @@ public class BaseClass {
 	}
 	
 	public void writeXL(HSSFWorkbook wb, HSSFSheet sh, int rowNo, String s1, String s2, String sheetName) throws Exception {
+		//create excel sheet and set value in created new file 
 		Cell cell1 = null, cell2 = null;
 		Row row;
 		if(sheetName.contains("TSR")) {
@@ -114,6 +118,7 @@ public class BaseClass {
 	}
 	
 	public CellStyle boldFont(HSSFWorkbook wb, String s1) {
+		//Update font color and bold fond for given style
 		CellStyle style = wb.createCellStyle();
 		Font font = wb.createFont();
 		if(s1.contains("Bold"))

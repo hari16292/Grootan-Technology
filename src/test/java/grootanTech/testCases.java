@@ -29,9 +29,9 @@ public class testCases extends BaseClass {
 	File newExcel = new File(System.getProperty("user.dir")+"\\Excel_Report\\Report.xls");
 	
 
+	// Loading properties file to get test URL
 	@BeforeTest
 	public void openBrowser() throws Exception {
-		// Loading properties file to get URLs
 		prop = new Properties();
 		FileInputStream in = new FileInputStream(
 				System.getProperty("user.dir") + "\\src\\main\\java\\resource\\dataSheet.properties");
@@ -43,6 +43,7 @@ public class testCases extends BaseClass {
 
 	}
 
+	//write and close the excel file, and close the browser which is opened by webdriver
 	@AfterTest
 	public void closeBrowser() throws Exception {
 		wb.write(newExcel);
@@ -50,6 +51,11 @@ public class testCases extends BaseClass {
 		driver.close();
 	}
 
+	/*
+	 * clicking all the available sections given in the website and taking
+	 * screenshot twise of each page and write list of "JuniorEngineers" in excel
+	 * sheet name JuniorEngineers
+	 */
 	@Test
 	public void tc1() throws Exception {
 		String homeWindow, blogWindow;
@@ -94,6 +100,7 @@ public class testCases extends BaseClass {
 		}
 	}
 
+	//Compare screenshots of each page and write the result with description in excel sheet name as "TSR"
 	@Test
 	public void tc2() throws Exception {
 		List<WebElement> sections = driver.findElements(h.getAllSections());

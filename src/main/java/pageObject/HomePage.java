@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+/*Capsule the locators value in Home page which are needed in this project*/
 public class HomePage {
 	
 	WebDriver driver;
